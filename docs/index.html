@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <style>
+      body {
+        font-family: "Pinyon Script", cursive;
+        background-color: #ffe6f0;
+        background-image: radial-gradient(circle at 10% 10%, rgba(255, 192, 203, 0.8) 0%, rgba(255, 192, 203, 0.8) 12%, transparent 12%),
+                          radial-gradient(circle at 40% 35%, rgba(255, 182, 193, 0.8) 0%, rgba(255, 182, 193, 0.8) 12%, transparent 12%),
+                          radial-gradient(circle at 70% 20%, rgba(255, 192, 203, 0.7) 0%, rgba(255, 192, 203, 0.7) 10%, transparent 10%),
+                          radial-gradient(circle at 85% 70%, rgba(255, 182, 193, 0.7) 0%, rgba(255, 182, 193, 0.7) 10%, transparent 10%),
+                          radial-gradient(circle at 25% 75%, rgba(255, 192, 203, 0.75) 0%, rgba(255, 192, 203, 0.75) 10%, transparent 10%);
+        background-size: 20% 20%, 18% 18%, 22% 22%, 16% 16%, 20% 20%;
+      }
+      @keyframes jump {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-16px); }
+      }
+      .jumping-text {
+        display: inline-block;
+        font-size: 2.5rem;
+        font-style: italic;
+        animation: jump 1s ease-in-out infinite;
+      }
+      p {
+        text-align: center;
+      }
+      .ribbon {
+        position: absolute;
+        font-size: 2rem;
+        color: #ff69b4;
+        animation: fly 10s linear infinite;
+        pointer-events: none;
+        z-index: 1;
+      }
+      .ribbon:nth-child(1) { top: 20%; animation-delay: 0s; }
+      .ribbon:nth-child(2) { top: 40%; animation-delay: 2s; }
+      .ribbon:nth-child(3) { top: 60%; animation-delay: 4s; }
+      .ribbon:nth-child(4) { top: 80%; animation-delay: 6s; }
+      .ribbon:nth-child(5) { top: 30%; animation-delay: 8s; }
+      @keyframes fly {
+        0% { left: -50px; transform: translateY(0); }
+        100% { left: calc(100vw + 50px); transform: translateY(-100px); }
+      }
+    </style>
+    <h1 style="font-size:4rem; font-weight:bold; text-align:center; margin:2rem 1rem;
+      background: linear-gradient(90deg, #ffb6d2, #ff91c4, #ff73b8, #ff5ba7, #ff4a99);
+      -webkit-background-clip: text;
+      color: transparent;
+      text-shadow: 0 0 8px rgba(0, 0, 0, 0.15);">
+      super duper coooollll
+    </h1>
+    <p><span class="jumping-text">!!!!!!das ist meine coole Webseite!!!!!</span></p>
+    <img src="https://www.rollingstone.com/wp-content/uploads/2019/06/lana-del-rey.jpg" alt="Lana Del Rey" style="display: block; margin: 0 auto; max-width: 300px;">
+    <div class="ribbon">&lt;3</div>
+    <div class="ribbon">&lt;3</div>
+    <div class="ribbon">&lt;3</div>
+    <div class="ribbon">&lt;3</div>
+    <div class="ribbon">&lt;3</div>
+    <div class="ribbon">&lt;3</div>
+  </body>
+</html>
